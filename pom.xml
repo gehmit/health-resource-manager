@@ -11,7 +11,7 @@
 	<groupId>com.healthmanagerresource</groupId>
 	<artifactId>HealthManager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>HealthManager</name>
 	<description>Health manager resource project</description>
 	<properties>

@@ -1,8 +1,10 @@
 package com.healthmanagerresource.models;
 
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
 import jakarta.persistence.*;
 
-@Entity
+@EntityScan
 @Table(name = "roles")
 public class Role {
   @Id
@@ -11,13 +13,13 @@ public class Role {
 
   @Enumerated(EnumType.STRING)
   @Column(length = 20)
-  private ERole name;
+  private EnumRole name;
 
   public Role() {
 
   }
 
-  public Role(ERole name) {
+  public Role(EnumRole name) {
     this.name = name;
   }
 
@@ -29,11 +31,11 @@ public class Role {
     this.id = id;
   }
 
-  public ERole getName() {
+  public EnumRole getName() {
     return name;
   }
 
-  public void setName(ERole name) {
+  public void setName(EnumRole name) {
     this.name = name;
   }
 }
